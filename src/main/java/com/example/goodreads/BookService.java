@@ -20,12 +20,12 @@ public class BookService implements BookRepository {
       return books;
    }
 
-   /*
-    * @Override
-    * public Book getBookById(int bookId) {
-    * Book book = hmap.get(bookId);
-    * return book;
-    * }
-    */
+   
+   @Override
+   public Book getBookById(int bookId) {
+      Book book = hmap.get(bookId);
+      return book;
+   }
+
 
 }

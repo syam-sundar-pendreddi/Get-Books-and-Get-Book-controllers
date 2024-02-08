@@ -15,8 +15,10 @@ public class BookController {
         return bookService.getBooks();
     }
 
-    /*@GetMapping("/books/{bookId}")
+
+    @GetMapping("/books/{bookId}")
     public Book getBook(@PathVariable("bookId") int bookId) {
-        return bookService.getBookById(bookId);
-    }*/
+      return bookService.getBookById(bookId);
+    }
+     
 }
